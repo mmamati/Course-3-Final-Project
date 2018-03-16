@@ -31,12 +31,9 @@ Step 2: The features.txt file from the data contains a list of 561 feature names
 Step 3: The Training Set is appended to the bottom of the Test set. 
         The Training Set and test set each consist of 3 parts:  1.) X-data which is the measurements from the accelerometers 
         2.) Y-data which is a number indicating one of 6 activities the user was undertaking when the data was gathered.
-        3.) Subject ID which is an integer from 1 to 30 representing which of the 30 participants generated the data
-
-        For each of these parts, the corresponding test and training set data is opened and appended, with the test data on top.
-        A unique ID is created starting at 1 for the top row.  Since order is preserved these IDs are used to join the data.
+        3.) Subject ID which is an integer from 1 to 30 representing which of the 30 participants generated the data 
         
-        After the data is joined, a subset of X-data is retained.  The raw data contained several tranformation to the data, such as             skewness, kurtosis, etc.  For the purposes of this data, only mean and std measurements were preserved.  meanFreq variables             were not kept.
+For each of these parts, the corresponding test and training set data is opened and appended, with the test data on top. A unique ID is created starting at 1 for the top row.  Since order is preserved these IDs are used to join the data. After the data is joined, a subset of X-data is retained.  The raw data contained several tranformation to the data, such as skewness, kurtosis, etc.  For the purposes of this data, only mean and std measurements were preserved.  meanFreq variables were not kept.
 
 Step 4  The X-data retained was given new variable names to make them more readable.  See the Code Book below for an explanation of             variable names and more details on the variables
 
